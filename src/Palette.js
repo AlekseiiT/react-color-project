@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-export default class Palatte extends Component {
+export default class Palette extends Component {
 	render() {
 		return (
 			<div>
-				<h1>Pelatte</h1>
+				<h1>Pelette</h1>
 			</div>
 		);
 	}
