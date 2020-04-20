@@ -7,8 +7,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				{console.log(generatePalette(seedColors[4]))}
-				<Palette {...seedColors[1]} />
+				<Palette palette={generatePalette(seedColors[4])} />
 			</div>
 		);
 	}

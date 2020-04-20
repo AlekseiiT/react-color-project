@@ -39,7 +39,6 @@ function generatePalette(starterPalette) {
 	for (const level of levels) {
 		newPalette.colors[level] = [];
 	}
-	let arr = [];
 	for (const color of starterPalette.colors) {
 		let scale = getScale(color.color, 10).reverse();
 		for (const i in scale) {

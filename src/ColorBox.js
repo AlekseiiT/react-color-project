@@ -10,7 +10,6 @@ export default class ColorBox extends Component {
 	}
 
 	changeCopyState() {
-		console.log('here');
 		this.setState({ copied: true }, () =>
 			setTimeout(() => {
 				this.setState({ copied: false });
