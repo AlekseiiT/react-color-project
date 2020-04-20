@@ -19,14 +19,14 @@ export default class Palette extends Component {
 	}
 
 	changeFormat(evt) {
-		this.setState({ format: evt.target.value });
+		this.setState({ format: evt });
 	}
 
 	render() {
 		const { colors } = this.props.palette;
 		const { level, format } = this.state;
 		const colorBoxes = colors[level].map((color) => (
-			<ColorBox key={color.hex} background={color[this.state.format]} name={color.name} />
+			<ColorBox key={color.hex} background={color[format]} name={color.name} />
 		));
 		return (
 			<div className="Palette">
