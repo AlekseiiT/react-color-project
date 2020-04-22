@@ -41,23 +41,22 @@ const styles = {
 		display: 'inline-block',
 		margin: '0 auto',
 		position: 'relative',
-		marginBottom: '-4px'
+		marginBottom: '-4.5px'
 	}
 };
 
 const MiniPalette = (props) => {
-	const { classes, paletteName, emoji, id, colors } = props;
+	const { classes, paletteName, emoji, colors, handleClick } = props;
 	const miniColorBoxes = colors.map((color) => {
 		return <div className={classes.miniColor} style={{ backgroundColor: color.color }} key={color.name} />;
 	});
 
 	return (
-		<div className={classes.root}>
+		<div className={classes.root} onClick={() => handleClick()}>
 			<div className={classes.colors}>{miniColorBoxes}</div>
 			<h5 className={classes.title}>
 				{paletteName} <span className={classes.emoji}>{emoji}</span>
 			</h5>
-			<Link to={`/palette/${id}`}>To to palette</Link>
 		</div>
 	);
 };
