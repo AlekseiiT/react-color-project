@@ -20,6 +20,7 @@ class Palette extends Component {
 		this.setState({ level });
 	}
 
+	text() {}
 	changeFormat(evt) {
 		this.setState({ format: evt });
 	}
