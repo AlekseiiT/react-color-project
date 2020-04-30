@@ -5,7 +5,7 @@ const styles = {
 		height: '25%',
 		margin: '0 auto',
 		position: 'relative',
-		marginBottom: '-4.5px',
+		marginBottom: '-5px',
 		'&:hover svg': {
 			color: 'white',
 			transform: 'scale(1.3)'
