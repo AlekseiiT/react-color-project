@@ -6,7 +6,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 const MiniPalette = (props) => {
 	const removePalette = (evt) => {
 		evt.stopPropagation();
-		props.deletePalette();
+		props.openDialog();
 	};
 
 	const { classes, paletteName, emoji, colors, handleClick } = props;
