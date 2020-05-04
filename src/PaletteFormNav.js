@@ -29,7 +29,6 @@ class PaletteFormNav extends Component {
 		const { classes, open, handleDrawerOpen, handleSubmit, palettes } = this.props;
 		return (
 			<div className={classes.root}>
-				<CssBaseline />
 				<AppBar
 					position="fixed"
 					color="default"
