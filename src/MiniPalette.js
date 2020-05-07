@@ -4,9 +4,6 @@ import styles from './styles/MiniPaletteStyles';
 import DeleteIcon from '@material-ui/icons/Delete';
 
 class MiniPalette extends PureComponent {
-	constructor(props) {
-		super(props);
-	}
 	removePalette = (evt) => {
 		evt.stopPropagation();
 		this.props.openDialog(this.props.id);
